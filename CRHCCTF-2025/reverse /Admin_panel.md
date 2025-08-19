@@ -98,7 +98,7 @@ we have to change the variable declaration to 0 so that when compared it produce
 
 Let's use the formula that my friend gave us earlier to find the correct instruction address when the program is run
 
-> file_off = (0x401aab - 0x4011c0) + 0x11c0 = 0x1aab
+> file_offset = (0x401aab - 0x4011c0) + 0x11c0 = 0x1aab
 
 Okay, because I don't know but I pretend to know. Actually, I experienced a patch failure. Then I asked my friend. And it turns out that besides having to find the base offset for the instruction address, it's also necessary to find the instruction that works directly on the instruction. I don't really understand it. And this is the formula given.
 
