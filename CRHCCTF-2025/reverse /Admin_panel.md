@@ -59,7 +59,7 @@ Okay, interesting. Honestly, when I got that output, I immediately did some rese
 To be honest, I'm not an assembly expert, but I understand a little about how assembly works and how the code blocks work. Here's a brief explanation.
 
 ```bash
-objdump -d Admin_Panel | sed -n '721,770p' | nl -ba
+objdump -d Admin_panel | sed -n '721,770p' | nl -ba
 401a79: 00 00
 401a7b: 48 89 45 f8      mov %rax,-0x8(%rbp)
 401a7f: 31 c0             xor %eax,%eax
