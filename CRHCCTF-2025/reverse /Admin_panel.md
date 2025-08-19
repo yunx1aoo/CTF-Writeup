@@ -112,7 +112,7 @@ Before we start, I will backup first, haha. I'm afraid of failure, so we have to
 
 Use this command:
 ```
-cp -n Admin_Panel Admin_Panel.bak
+cp -n Admin_panel Admin_panel.bak
 ```
 
 we have to patch `01 00 00 00` with `00 00 00 00` which will return zf = 0 and will jump directly to the flag
