@@ -96,11 +96,11 @@ OK, it's easy, all we have to do is patch this block.
 
 we have to change the variable declaration to 0 so that when compared it produces ZF = 0
 
-Let's use the formula that my friend gave us earlier to find the correct instruction address when the program is run
+Let's use the formula that my bro gave us earlier to find the correct instruction address when the program is run
 
 > file_offset = (0x401aab - 0x4011c0) + 0x11c0 = 0x1aab
 
-Okay, because I don't know but I pretend to know. Actually, I experienced a patch failure. Then I asked my friend. And it turns out that besides having to find the base offset for the instruction address, it's also necessary to find the instruction that works directly on the instruction. I don't really understand it. And this is the formula given.
+Okay, because I don't know but I pretend to know. Actually, I experienced a patch failure. Then I asked my bro again hhe. And it turns out that besides having to find the base offset for the instruction address, it's also necessary to find the instruction that works directly on the instruction. I don't really understand it. And this is the formula given.
 
 > file_off_instr = (0x401aab - 0x4011c0) + 0x11c0 = 0x1aab
 
