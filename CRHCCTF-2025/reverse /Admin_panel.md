@@ -1,4 +1,4 @@
-<img width="616" height="469" alt="image" src="https://github.com/user-attachments/assets/4e33f586-7348-4e75-aba2-534f66d37d8a" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/4e33f586-7348-4e75-aba2-534f66d37d8a" />
 
 ---
 # Admin Panel - 300 Points
@@ -11,21 +11,21 @@
 
 We are given an `Admin_panel` file. First, let's check the file type using the `file` command.
 
-<img width="1893" height="76" alt="屏幕截图 2025-08-19 133928" src="https://github.com/user-attachments/assets/abc82471-ae8b-480c-8e56-5e5cbb195cb4" />
+<img width="850" height="76" alt="屏幕截图 2025-08-19 133928" src="https://github.com/user-attachments/assets/abc82471-ae8b-480c-8e56-5e5cbb195cb4" />
 
 Next, let's check the security with `checksec`, the most important thing is whether the pie is disabled or not.
 
-<img width="1912" height="83" alt="屏幕截图 2025-08-19 142741" src="https://github.com/user-attachments/assets/d1dbd7ac-a620-423c-a4fc-4e46b7b3febb" />
+<img width="850" height="83" alt="屏幕截图 2025-08-19 142741" src="https://github.com/user-attachments/assets/d1dbd7ac-a620-423c-a4fc-4e46b7b3febb" />
 
 Then, let's run this program by giving it permission using `chmod` and run `./Admin_panel`
 
-<img width="394" height="138" alt="屏幕截图 2025-08-19 135429" src="https://github.com/user-attachments/assets/8e2865e0-2888-4d0b-a5c4-a1bec805147d" />
+<img width="394" height="90" alt="屏幕截图 2025-08-19 135429" src="https://github.com/user-attachments/assets/8e2865e0-2888-4d0b-a5c4-a1bec805147d" />
 
 So this program runs by asking if we are admin, whatever I do, this program never returns I am admin, which means we can assume that to get the `flag` we have to be admin in this program.
 
 Let's try to find interesting words like `flag`, `admin`, `CRHC (format flag)`, `key` and also `pass` using `strings` and `grep`.
 
-<img width="764" height="335" alt="屏幕截图 2025-08-19 140051" src="https://github.com/user-attachments/assets/d19590c6-5f39-4631-84fd-2691fc8dd062" />
+<img width="500" height="200" alt="屏幕截图 2025-08-19 140051" src="https://github.com/user-attachments/assets/d19590c6-5f39-4631-84fd-2691fc8dd062" />
 
 Well, there are several words that were taken, and they most likely came from `.text` or `.rodata`.
 
@@ -35,7 +35,7 @@ What is `.rodata` and `.text` can be seen here
 
 So, to find out more details, let's try to find `.rodata` and also `.text` using `readelf`, this is a fairly powerful command for elf type files.
 
-<img width="833" height="73" alt="屏幕截图 2025-08-19 143306" src="https://github.com/user-attachments/assets/7e44865e-4964-4487-b568-731eb15591b5" />
+<img width="500" height="73" alt="屏幕截图 2025-08-19 143306" src="https://github.com/user-attachments/assets/7e44865e-4964-4487-b568-731eb15591b5" />
 
 I was a bit confused at this point, so I asked my bro `ChatGPT` hhe. He explained the `base file` and the `virtual address`, which determines the `instruction address`. He also gave me the formula for finding the `instruction address`.
 
@@ -49,11 +49,11 @@ but for now it's not very useful because we will use it later, let's continue wh
 
 Now let's first find out where this program starts by using `objdump` which checks the `.rodata` data.
 
-<img width="747" height="266" alt="屏幕截图 2025-08-19 145629" src="https://github.com/user-attachments/assets/d8af5dbb-80e2-407e-965f-c39eb34a356f" />
+<img width="500" height="200" alt="屏幕截图 2025-08-19 145629" src="https://github.com/user-attachments/assets/d8af5dbb-80e2-407e-965f-c39eb34a356f" />
 
 From the output, we know that the are you admin is at offset 49e030. Let's check the code using objdump and grep the offset.
 
-<img width="1054" height="51" alt="屏幕截图 2025-08-19 150203" src="https://github.com/user-attachments/assets/e189f26b-9bbf-49b4-bab7-7fcadbaddcfa" />
+<img width="700" height="51" alt="屏幕截图 2025-08-19 150203" src="https://github.com/user-attachments/assets/e189f26b-9bbf-49b4-bab7-7fcadbaddcfa" />
 
 
 
@@ -146,7 +146,7 @@ no i'm not admin, now you can trust me
 CRHC{It's_noT_poss1bl3!!!}
 ```
 
-<img width="423" height="97" alt="image" src="https://github.com/user-attachments/assets/8b3541c4-e256-42db-8284-3b51a08718e2" />
+<img width="300" height="97" alt="image" src="https://github.com/user-attachments/assets/8b3541c4-e256-42db-8284-3b51a08718e2" />
 
 ## **flag:** `CRHC{It's_noT_poss1bl3!!!}`
 
