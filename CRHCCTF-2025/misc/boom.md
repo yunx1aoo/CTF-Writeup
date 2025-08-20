@@ -1,4 +1,4 @@
-<img width="618" height="625" alt="屏幕截图 2025-08-20 083208" src="https://github.com/user-attachments/assets/ef2c37cd-78c8-4a4c-8491-c61c819004e8" />
+<img width="300" height="300" alt="屏幕截图 2025-08-20 083208" src="https://github.com/user-attachments/assets/ef2c37cd-78c8-4a4c-8491-c61c819004e8" />
 
 ---
 # boom - 100 points
@@ -13,7 +13,7 @@ we are given a video file `boom.MP4` and there is also a zip file `boom.zip`. Wh
 ```bash
 unzip boom.zip
 ```
-<img width="1882" height="945" alt="屏幕截图 2025-08-20 084234" src="https://github.com/user-attachments/assets/d3eb0ce3-ff31-4dc3-bd50-f5bdc3ca1162" />
+<img width="1000" height="900" alt="屏幕截图 2025-08-20 084234" src="https://github.com/user-attachments/assets/d3eb0ce3-ff31-4dc3-bd50-f5bdc3ca1162" />
 
 oh my god. why are there so many layers haha. we can't possibly open every layer just to get the flag. this is impossible lol
 
@@ -21,13 +21,11 @@ oh my god. why are there so many layers haha. we can't possibly open every layer
 # solution
 We can use the `-r` option in `grep` to recursively search our current directory. Using this option will make searching much easier. We can use the format flags to aid in the search.
 
-.
-
 ```bash
 grep -r 'CRHC'
 ```
 
-<img width="770" height="129" alt="屏幕截图 2025-08-20 085346 - Copy" src="https://github.com/user-attachments/assets/6d2afec3-fa87-4704-8541-c145b40f014d" />
+<img width="500" height="75" alt="屏幕截图 2025-08-20 085346 - Copy" src="https://github.com/user-attachments/assets/6d2afec3-fa87-4704-8541-c145b40f014d" />
 
 and yeah haha. we got it
 
