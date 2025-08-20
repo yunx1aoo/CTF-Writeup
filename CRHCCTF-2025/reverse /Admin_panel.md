@@ -6,6 +6,9 @@
 
 **Attachments:** `Admin_panel`
 
+**Hints:**
+
+**Author:** `Robin`
 
 ---
 
@@ -150,10 +153,5 @@ CRHC{It's_noT_poss1bl3!!!}
 
 ## **flag:** `CRHC{It's_noT_poss1bl3!!!}`
 
-i'm says I'm not an admin. How come I got the flag lol. This is a fun reverse challenge in my opinion haha. We don't need ghidra because we only need to patch 1 block of code and boommmm hahah
-
-I also thank my bro who was willing to help me when I was stuck.
-
-Thank you for reading my writeup. I'm here to learn with all of you. **Happy CTF**
 
 
