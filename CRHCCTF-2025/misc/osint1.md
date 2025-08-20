@@ -17,6 +17,8 @@
 
 given a picture. It looks like this is a large grassland and behind it is a mountain. I was given a picture. It looks like a vast grassland with mountains behind it. I used Google Lens to get the location. I saw a post and got the name of this place. It's located in Hokkaido and is called `Earth Garden`.
 
+**https://4travel.jp/travelogue/10701581**
+
 <img width="500" height="220" alt="image" src="https://github.com/user-attachments/assets/2c9fb835-ac99-4bc0-b668-a0629036345d" />
 
 I tried to submit with that point but it came out wrong and I tried to find a place around there and found it.
