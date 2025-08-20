@@ -1,3 +1,6 @@
+<img width="616" height="469" alt="image" src="https://github.com/user-attachments/assets/4e33f586-7348-4e75-aba2-534f66d37d8a" />
+
+---
 # Admin Panel - 300 Points
 **Description:** `I designed the most secure admin panel ever.`
 
