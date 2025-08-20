@@ -19,5 +19,14 @@ I was given a picture that looked like a school building or something. I used Go
 
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/b6862832-dcca-4215-a669-0742fe68df2f" />
 
+and one interesting thing is that I found a URL which is the URL we are looking for
 
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/23f60cf7-87c7-4395-9241-8713bc63ee40" />
 
+based on the given flag format: `https://www.xxxxxx.xxxxxx.xxxxxx/` , there is www in front of the domain name. so we can conclude that it seems we are right
+
+so we just put it in like this
+
+> https://www.tpa.edu.tw/
+
+## **Flag:** `CRHC{https://www.tpa.edu.tw/}`
