@@ -3,10 +3,13 @@
 ---
 # boom - 100 points
 **Description:** `booooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooom`
-**attachments:** `boom.MP4` `boom.zip`
+
+**Attachments:** `boom.MP4` `boom.zip`
 
 **Hint:**
 > boom.mp4 is useless, I just wanted to show it to everyone
+
+**Author:** `syuan`
 
 ---
 we are given a video file `boom.MP4` and there is also a zip file `boom.zip`. When I opened the mp4 file, I got a video that seemed to be a Chinese song. There was nothing that interesting in it. that's why i switched to the zip file. when i extracted the zip
