@@ -5,9 +5,12 @@ https://ctfd.crhc.club
 ## Ranking
 - **Rank:** 32/491
 - **Score:** 2485 points
-- **Categories Solved:** Misc (5), Web (2), Foren (2), Crypto (3), Reverse (3), Pwn (0)
+- **Categories Solved:**Welcome(1), Misc (5), Web (2), Foren (2), Crypto (3), Reverse (3), Pwn (0)
 
 ## Solved Challenge
+**Welcome**  
+- Welcome - 100 
+
 **Misc (5)**  
 - Boom - 100 
 - Osint1 - 100  
