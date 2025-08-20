@@ -148,7 +148,7 @@ CRHC{It's_noT_poss1bl3!!!}
 
 <img width="423" height="97" alt="image" src="https://github.com/user-attachments/assets/8b3541c4-e256-42db-8284-3b51a08718e2" />
 
-
+## **flag:** `CRHC{It's_noT_poss1bl3!!!}`
 
 i'm says I'm not an admin. How come I got the flag lol. This is a fun reverse challenge in my opinion haha. We don't need ghidra because we only need to patch 1 block of code and boommmm hahah
 
