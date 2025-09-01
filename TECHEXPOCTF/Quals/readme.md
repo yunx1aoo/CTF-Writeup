@@ -2,5 +2,14 @@
 
 ## Scoreboard in Quals Match
 
+**solved:** `12/14` 
+
 **My Solved Chall**
-- Web Exploitation
+**Web Exploitation**
+- Cookie Trickery
+- Bypass OTP (First Blood🩸)
+- Disguised Upload
+
+**Reverse Engineering**
+- Random XOR (First Blood🩸)
+- Kirigaya Secret 
