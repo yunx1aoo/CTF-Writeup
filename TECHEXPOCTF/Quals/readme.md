@@ -4,7 +4,7 @@
 
 **solved:** `12/14` 
 
-**My Solved Chall**
+**My Solved Chall:**
 
 **Web Exploitation**
 - Cookie Trickery
