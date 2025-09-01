@@ -4,3 +4,9 @@
 
 ---
 
+**My Solved Chall:**
+
+**Web Exoloitation**
+- Session Imperator API (first Blood🩸)
+- XSS Reflected Encode?
+- UID Voyager (IDOR)
