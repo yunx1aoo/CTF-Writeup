@@ -2,6 +2,8 @@ https://ctfd.crhc.club
 
 <img width="1039" height="244" alt="image" src="https://github.com/user-attachments/assets/8edf0a30-bfea-4c88-8354-cffbbd70c0bc" />
 
+<img width="1325" height="925" alt="rank_32_certificate" src="https://github.com/user-attachments/assets/28037c20-482a-42e2-afaa-a080e2694b6a" />
+
 ## Ranking
 - **Rank:** 32/491
 - **Score:** 2485 points
