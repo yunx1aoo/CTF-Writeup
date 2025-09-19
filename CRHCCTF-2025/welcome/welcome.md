@@ -1,4 +1,4 @@
-<img width="578" height="739" alt="welcome_chall" src="https://github.com/user-attachments/assets/0bd88308-09ea-452c-ab02-c31a2ef2d8bb" />
+<img width="300" height="300" alt="welcome_chall" src="https://github.com/user-attachments/assets/0bd88308-09ea-452c-ab02-c31a2ef2d8bb" />
 
 # Welcome - 100 points
 **Description:** 
