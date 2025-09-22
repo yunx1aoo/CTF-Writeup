@@ -1,7 +1,7 @@
-# Welcome
+# WhatIsCTF
 
-**Category:** welcome
-**Difficulty:** 
+**Category:** Welcome
+**Difficulty:**
 **Points:** 5
 **Author:** 
 **Date:** 2025-09-23
@@ -12,34 +12,17 @@
 
 
 
-## 💡 Solution
-
-### Step 1:
+## Solution
 
 
-### Step 2:
 
-
-### Step 3:
-
-
-## 🚩 Flag
+## Flag
 
 ```
 
 ```
 
-## 📁 Files Used
-
-
-
-## 🛠️ Tools & Techniques
-
-
-
-## 📚 Learning Points
-
-
+## Tools & Techniques
 
 ---
 *Writeup by  - 2025-09-23*
