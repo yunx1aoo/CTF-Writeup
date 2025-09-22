@@ -24,7 +24,7 @@ https://web1.ittsec.net/
 ---
 
 ## Solution
-<img width="700" height="500" alt="屏幕截图 2025-09-21 213155" src="https://github.com/user-attachments/assets/241d500d-a1ad-4ebc-99bd-65b8e92bc7b4" />
+<img width="500" height="500" alt="屏幕截图 2025-09-21 213155" src="https://github.com/user-attachments/assets/241d500d-a1ad-4ebc-99bd-65b8e92bc7b4" />
 
 diberikan sebuah landing page dari kampus ITTS untuk mendapatkan flag kita gunakan `ctlr-u` untuk melihat source code dari web ini
 
