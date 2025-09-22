@@ -1,9 +1,13 @@
 # WhatIsCTF
 
 **Category:** Welcome
+
 **Difficulty:**
+
 **Points:** 5
+
 **Author:** 
+
 **Date:** 2025-09-23
 
 ---
