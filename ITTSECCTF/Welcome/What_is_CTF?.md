@@ -2,6 +2,10 @@
 
 **Category:** Welcome
 
+**Description:**
+
+**Attachments:**
+
 **Difficulty:** -
 
 **Points:** 5
