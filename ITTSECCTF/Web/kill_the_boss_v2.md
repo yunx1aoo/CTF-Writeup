@@ -7,8 +7,6 @@
 **Category:** `Web`
 
 **Description:**
-```
-```
 
 **Attachments:** `https://web3.ittsec.net/`
 
