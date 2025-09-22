@@ -1,5 +1,7 @@
 # WhatIsCTF
 
+<img width="300" height="300" alt="屏幕截图 2025-09-21 212919" src="https://github.com/user-attachments/assets/669f43aa-4078-4940-8a72-5abec4f45002" />
+
 **Category:** Welcome
 
 **Description:**
