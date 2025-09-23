@@ -7,9 +7,6 @@
 **Category:** `Web`
 
 **Description:**
-```
-
-```
 
 **Attachments:** `https://web5.ittsec.net/`
 
