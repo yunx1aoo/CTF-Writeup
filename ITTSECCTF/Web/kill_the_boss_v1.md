@@ -7,9 +7,6 @@
 **Category:** `Web`
 
 **Description:**
-```
-
-```
 
 **Attachments:** `https://web2.ittsec.net/`
 
