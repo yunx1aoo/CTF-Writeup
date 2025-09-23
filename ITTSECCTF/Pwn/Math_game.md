@@ -196,4 +196,4 @@ ITTSec{m4th_Master_2025_impossibl3_challenge}
 `gdb` `ghidra` `pwn` `python` 
 
 ---
-*Writeup by spl1t4t3rminal - 2025-09-23*
+*Writeup by yunx1ao - 2025-09-23*
