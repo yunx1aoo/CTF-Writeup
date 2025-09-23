@@ -103,4 +103,4 @@ ITTSec{AES_crypt_4nd_HMAC_v3r1fy_ftw}
 `Console`
 
 ---
-*Writeup by spl1t4t3rminal - 2025-09-23*
+*Writeup by yunx1ao - 2025-09-23*
