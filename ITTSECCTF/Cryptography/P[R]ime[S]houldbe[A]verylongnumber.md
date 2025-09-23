@@ -43,4 +43,4 @@ ITTS{br0k3n_RSA}
 `dcode RSA Decrypt`
 
 ---
-*Writeup by spl1t4t3rminal - 2025-09-23*
+*Writeup by yunx1ao - 2025-09-23*
