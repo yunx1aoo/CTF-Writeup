@@ -43,4 +43,4 @@ ITTSec{e4sy_r3ver53_Flag_s0}
 `strings`
 
 ---
-*Writeup by spl1t4t3rminal - 2025-09-23*
+*Writeup by yunx1ao - 2025-09-23*
