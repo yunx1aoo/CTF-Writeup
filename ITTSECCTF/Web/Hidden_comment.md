@@ -44,4 +44,4 @@ ctrl + u
 
 ---
 
-*Writeup by spl1t4t3rminal - 2025-09-23*
+*Writeup by yunx1ao - 2025-09-23*
