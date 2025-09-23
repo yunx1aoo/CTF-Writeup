@@ -1,22 +1,21 @@
 # Math game
 
-
-image
+<img width="300" height="300" alt="屏幕截图 2025-09-21 213001" src="https://github.com/user-attachments/assets/deaeef67-5906-4e07-a882-2baacdd88355" />
 
 ---
 
-**Category:** ``
+**Category:** `Pwn`
 
 **Description:**
 ```
-
+Bisakah kamu mengalahkannya?
 ```
 
-**Attachments:** ``
+**Attachments:** `math_game`
 
 **Difficulty:**
 
-**Points:** ``
+**Points:** `12`
 
 **Author:**
 
@@ -26,26 +25,106 @@ image
 
 ## Solution
 
-<img width="1912" height="164" alt="image" src="https://github.com/user-attachments/assets/e66acbd6-257b-4b00-a203-52988b8c7c09" />
+in this challenge an executable file is given which. Actually, I'm confused about the context of this challenge, whether it's a `pwn` or `reverse engineering`. The method I'm using here is the `reverse engineering` method.
 
-<img width="858" height="590" alt="image" src="https://github.com/user-attachments/assets/5c819687-36a7-49db-ab0d-7a35624888ca" />
+First I checked the file type to see if this was a Linux or Windows file.and check if we can get the flag straight away and I only got a fake flag
 
-<img width="510" height="655" alt="image" src="https://github.com/user-attachments/assets/045c390e-6ba4-4e55-979d-7e97e1fe9aa1" />
+<img width="500" height="164" alt="image" src="https://github.com/user-attachments/assets/e66acbd6-257b-4b00-a203-52988b8c7c09" />
 
-<img width="1038" height="410" alt="image" src="https://github.com/user-attachments/assets/774f4a9d-1558-4e13-abf6-5766135e3e68" />
+Next I give permission to the file to see how this program runs and from there we can know which steps we will take
 
-<img width="421" height="398" alt="image" src="https://github.com/user-attachments/assets/6f479f7d-5e11-4555-bd96-9bea57811051" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5c819687-36a7-49db-ab0d-7a35624888ca" />
+
+I think it's too crazy that he asked us to answer the questions quickly. If we don't answer them, we will immediately lose.
+
+Next, the account uses `GDB` to check what functions are in this code. 
 
 ```bash
-                             obfuscated_flag[1]                              XREF[2,1]:   Entry Point(*), 
-                             obfuscated_flag                                              deobfuscate_flag:0010154b(*), 
-                                                                                          deobfuscate_flag:00101558(R)  
-        00102680 0b 16 16        undefine
-                 11 27 21 
-                 39 2f 76 
-           00102680 0b              undefined10Bh                     [0]                               XREF[2]:     Entry Point(*), 
-                                                                                                                     deobfuscate_flag:0010154b(*)  
-           00102681 16              undefined116h                     [1]                               XREF[1]:     deobfuscate_flag:00101558(R)  
+gef➤  info functions
+All defined functions:
+
+Non-debugging symbols:
+0x0000000000001000  _init
+0x00000000000010e0  __cxa_finalize@plt
+0x00000000000010f0  __stack_chk_fail@plt
+0x0000000000001100  alarm@plt
+0x0000000000001110  srand@plt
+0x0000000000001120  __sysv_signal@plt
+0x0000000000001130  time@plt
+0x0000000000001140  fflush@plt
+0x0000000000001150  __printf_chk@plt
+0x0000000000001160  __isoc99_scanf@plt
+0x0000000000001170  sleep@plt
+0x0000000000001180  getc@plt
+0x0000000000001190  rand@plt
+0x00000000000011a0  main
+0x0000000000001440  _start
+0x0000000000001470  deregister_tm_clones
+0x00000000000014a0  register_tm_clones
+0x00000000000014e0  __do_global_dtors_aux
+0x0000000000001520  frame_dummy
+0x0000000000001530  timer_handler
+0x0000000000001540  deobfuscate_flag
+0x0000000000001580  generate_hard_math
+0x00000000000017d0  print_banner
+0x0000000000001870  _fini
+```
+
+what's interesting is that there is a function that deobfuscates the flag there. Next I did a disas on the function to get a glimpse of how it works.
+
+```bash
+gef➤  disas deobfuscate_flag
+Dump of assembler code for function deobfuscate_flag:
+   0x0000000000001540 <+0>:     endbr64
+   0x0000000000001544 <+4>:     mov    edx,0xb
+   0x0000000000001549 <+9>:     xor    eax,eax
+   0x000000000000154b <+11>:    lea    rcx,[rip+0x112e]        # 0x2680 <obfuscated_flag>
+   0x0000000000001552 <+18>:    jmp    0x155c <deobfuscate_flag+28>
+   0x0000000000001554 <+20>:    nop    DWORD PTR [rax+0x0]
+   0x0000000000001558 <+24>:    movzx  edx,BYTE PTR [rcx+rax*1]
+   0x000000000000155c <+28>:    xor    edx,0x42
+   0x000000000000155f <+31>:    mov    BYTE PTR [rdi+rax*1],dl
+   0x0000000000001562 <+34>:    add    rax,0x1
+   0x0000000000001566 <+38>:    cmp    rax,0x2d
+   0x000000000000156a <+42>:    jne    0x1558 <deobfuscate_flag+24>
+   0x000000000000156c <+44>:    mov    BYTE PTR [rdi+0x2d],0x0
+   0x0000000000001570 <+48>:    ret
+End of assembler dump.
+```
+
+it can be seen that the function performs an xor on the flag. Next I did a check in Ghidra and looked for the `deobfucate_flag` function.
+
+And after decompilation, here's the contents of the deobfuscate_flag function. It appears to be performing an xor with the key 0x42.
+
+```cpp
+
+void deobfuscate_flag(long param_1)
+
+{
+  long lVar1;
+  byte bVar2;
+  
+  bVar2 = 0xb;
+  lVar1 = 0;
+  while( true ) {
+    *(byte *)(param_1 + lVar1) = bVar2 ^ 0x42;
+    if (lVar1 + 1 == 0x2d) break;
+    bVar2 = obfuscated_flag[lVar1 + 1];
+    lVar1 = lVar1 + 1;
+  }
+  *(undefined1 *)(param_1 + 0x2d) = 0;
+  return;
+}
+
+
+```
+
+there you can see obfuscated_flag which when clicked takes us to the xored flag fragment
+
+```asm
+           00102680 0b              undefined10Bh                     [0]                             
+                                                                                                                 
+           00102681 16              undefined116h                     [1]                            
            00102682 16              undefined116h                     [2]
            00102683 11              undefined111h                     [3]
            00102684 27              undefined127h                     [4]
@@ -93,14 +172,28 @@ image
 
 ```
 
+Since we've already got the flag pieces, we just need to reverse the logic by doing a re-XOR with key 0x42.
+
+```python
+zsh > python
+Python 3.13.7 (main, Aug 20 2025, 22:17:40) [GCC 14.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from pwn import xor
+>>> flag = [0x0b, 0x16, 0x16, 0x11, 0x27, 0x21, 0x39, 0x2f, 0x76, 0x36, 0x2a, 0x1d, 0x0f, 0x23, 0x31, 0x36, 0x27, 0x30, 0x1d, 0x70, 0x72, 0x70, 0x77, 0x1d,\ 0x2b,0x2f, 0x32, 0x2d, 0x31, 0x31, 0x2b, 0x20, 0x2e, 0x71, 0x1d, 0x21, 0x2a, 0x23, 0x2e, 0x2e, 0x27, 0x2c, 0x25, 0x27, 0x3f, 0x42]
+>>> key = 0x42
+>>> print(xor(flag, key))
+b'ITTSec{m4th_Master_2025_impossibl3_challenge}\x00'
+```
 
 ## Flag
 
 ```
-
+ITTSec{m4th_Master_2025_impossibl3_challenge}
 ```
 
 ## Tools & Techniques
+
+`gdb` `ghidra` `pwn` `python` 
 
 ---
 *Writeup by spl1t4t3rminal - 2025-09-23*
