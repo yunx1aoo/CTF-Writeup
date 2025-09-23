@@ -45,11 +45,13 @@ because I saw that there were 2 interesting types of functions encryptedata(), a
 
 It was really unexpected that he would use the AES key algorithm there. After that, I tried brute force and searched for the AES key. And I found it.
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/47449b3c-0138-46ff-bca4-347e58a26e92" />
+<img width="675" height="93" alt="屏幕截图 2025-09-21 214416" src="https://github.com/user-attachments/assets/ed8becb0-a0b8-446b-a867-b6e45c7a4008" />
 
 **key:** `MySuperSecretKey123`
 
 Next I made a code to generate damage and a new hmac that I had set myself to beat the boss.
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/47449b3c-0138-46ff-bca4-347e58a26e92" />
 
 ```bash
 (async () => {
