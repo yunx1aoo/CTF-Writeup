@@ -29,7 +29,7 @@ Good luck and have fun!
 
 
 ## Solution
-masukkan flag yang ada di deskripsi chall
+enter the flags in the challenge description
 
 
 ## Flag 
