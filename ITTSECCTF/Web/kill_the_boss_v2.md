@@ -64,4 +64,4 @@ ITTSec(p4r4m3t3r_t4mp3ring_v14_p0st_b4s364_ftw)
 `base64 encoding`
 
 ---
-*Writeup by spl1t4t3rminal - 2025-09-23*
+*Writeup by yunx1ao - 2025-09-23*
