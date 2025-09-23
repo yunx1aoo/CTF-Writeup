@@ -62,8 +62,7 @@ I got a base64. which is the flag. then i decode it and i get it
 ## Flag
 
 ```
-<img width="1017" height="185" alt="屏幕截图 2025-09-23 144139" src="https://github.com/user-attachments/assets/445cdf34-8a3a-4d05-b3d9-9dcff9b5d56d" />
-
+ITTSec{_cl4ss1c_Lfi_}
 ```
 
 ## Tools & Techniques
