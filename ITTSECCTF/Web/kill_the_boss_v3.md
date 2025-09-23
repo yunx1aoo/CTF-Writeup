@@ -34,13 +34,13 @@ If we click attack, as usual we are the ones who will always die, somehow this i
 This time the challenge is a bit different, when I checked the source code, it seems that our parameters have been encrypted using the encryption algorithm and there is also HMAC there.
 
 <img width="500" height="500" alt="屏幕截图 2025-09-21 214255" src="https://github.com/user-attachments/assets/12c165dd-4057-45b0-9c48-0fd851243e74" />
-
+b
 <img width="500" height="500" alt="屏幕截图 2025-09-21 213839" src="https://github.com/user-attachments/assets/e344d556-7ba6-4771-b1b3-272612080e4c" />
 
 because I saw that there were 2 interesting types of functions encryptedata(), and generatehmac() so I called them using the console
 
 <img width="500" height="500" alt="屏幕截图 2025-09-21 214322" src="https://github.com/user-attachments/assets/9b7ba738-56cb-4ef5-a4eb-263a123ed8ab" />
-
+<br>
 <img width="500" height="500" alt="屏幕截图 2025-09-21 214326" src="https://github.com/user-attachments/assets/1c80e597-2171-46c4-8cb7-0322c8e89c6e" />
 
 It was really unexpected that he would use the AES key algorithm there. After that, I tried brute force and searched for the AES key. And I found it.
@@ -51,9 +51,7 @@ It was really unexpected that he would use the AES key algorithm there. After th
 
 Next I made a code to generate damage and a new hmac that I had set myself to beat the boss.
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/47449b3c-0138-46ff-bca4-347e58a26e92" />
-
-```bash
+```javascript
 (async () => {
 const data = "damage-9001";
 const enc = new TextEncoder();
