@@ -1,0 +1,113 @@
+# Sign Checker
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/d31a749d-0d20-4f14-9c96-0fdc38abe07e" />
+
+---
+
+**Category:** `Mobile`
+
+**Description:**
+```
+The flag is hidden behind trust. 2^8
+```
+
+**Attachments:** `signchecker.apk`
+
+**Difficulty:**
+
+**Points:** `15`
+
+**Author:**
+
+**Date:** 2025-09-24
+
+---
+
+## Solution
+
+we are give a apk file. if i checked using phone there is only have a submit button. if i clicked the button. the response is `invalid sign`
+
+if i checked using linux this is i get it
+
+<img width="499" height="499" alt="image" src="https://github.com/user-attachments/assets/235b2194-f9b0-4d51-bd68-7f119aa30075" />
+
+next i want to disassemble this file using `apktool`. then i check the source code using jadx gui to see what happen in this app
+
+and i found thisss. 
+
+<img width="500" height="181" alt="image" src="https://github.com/user-attachments/assets/81b462f1-2976-4f9b-88db-42130dea6460" />
+
+if we check the url 
+
+<img width="687" height="164" alt="image" src="https://github.com/user-attachments/assets/af41e05b-faa5-4584-b60d-c4cc4cec0da6" />
+
+the response is same when i clicked submit button in app. i think this app get response from that web
+
+after that i checked the asm code. and found a function. i think this function do xor with something but i must check it first
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/08d46833-fbce-4232-a72e-aa770f269f14" />
+
+after exploring the code i found the key of xor. this function use 0x55 to encrypt the data
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c01ba85d-5c31-44b9-abbf-498ce59d883f" />
+
+after get the key. i disas again and search for the data. and i found 2 data in this app. the data like this:
+
+data 1
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8488df36-ab39-418c-b132-27b1665070bb" />
+
+data 2
+
+<img width="875" height="120" alt="image" src="https://github.com/user-attachments/assets/42011b79-e7ad-41a4-b137-6f8753876888" />
+
+after get the data. next i want to decrypt the data use key 0x55.
+
+```python
+ zsh > python
+Python 3.13.7 (main, Aug 20 2025, 22:17:40) [GCC 14.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from pwn import xor
+>>> data1 = [0x6a, 0x33, 0x39, 0x34, 0x32, 0x68]
+>>> data2 = [0x73, 0x26, 0x3c, 0x32, 0x3b, 0x68]
+>>> key = 0x55
+>>> print(data1)
+[106, 51, 57, 52, 50, 104]
+>>> print(xor(data1, key))
+b'?flag='
+>>> print(xor(data2,key))
+b'&sign='
+```
+
+i think the parameter is use for the web so i add the parameter on the web
+
+<img width="500" height="100" alt="image" src="https://github.com/user-attachments/assets/6b72985f-a25a-4d47-92fe-0a9ed837de4b" />
+
+but still not get the flag. if checked the description. it said `The flag is hidden behind trust. 2^8`. `2^8` is `256`
+
+i think thats is a sha256. so i change the parameter `flag=0` to `flag=1`. and fill sign parameter with sha 256 like this
+
+<img width="300" height="102" alt="image" src="https://github.com/user-attachments/assets/f0927bb7-4489-47a7-9ba7-2689cebdb266" />
+
+so we can fill the result to `sign=6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b`
+
+okay now lets get the flag
+
+<img width="500" height="122" alt="image" src="https://github.com/user-attachments/assets/9159b821-acb0-48e5-8188-c9b9b907d335" />
+
+
+## Flag
+
+```
+ITTSec{ssl_piNn1ng_is_only_illusi0n}
+```
+
+## Tools & Techniques
+
+`ssl`
+`sha256`
+`apktool`
+`jadx-gui`
+
+---
+*Writeup by yunx1ao - 2025-09-23*
