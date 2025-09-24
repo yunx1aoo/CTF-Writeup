@@ -39,7 +39,7 @@ I think it's too crazy that he asked us to answer the questions quickly. If we d
 
 Next, the account uses `GDB` to check what functions are in this code. 
 
-```bash
+```asm
 gef➤  info functions
 All defined functions:
 
