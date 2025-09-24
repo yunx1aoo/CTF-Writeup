@@ -35,7 +35,17 @@ next i want to disassemble this file using `apktool`. then i check the source co
 
 and i found thisss. 
 
-<img width="500" height="181" alt="image" src="https://github.com/user-attachments/assets/81b462f1-2976-4f9b-88db-42130dea6460" />
+```kotlin
+    public static final Unit SubmitScreen$lambda$6$lambda$5$lambda$4(final MutableState $responseText$delegate) {
+        makeRequest("https://mit.ittsec.net/?flag=0", new Function1() { // from class: com.example.ittsecmobile2.MainActivityKt$$ExternalSyntheticLambda2
+            @Override // kotlin.jvm.functions.Function1
+            public final Object invoke(Object obj) {
+                return MainActivityKt.SubmitScreen$lambda$6$lambda$5$lambda$4$lambda$3($responseText$delegate, (String) obj);
+            }
+        });
+        return Unit.INSTANCE;
+    }
+```
 
 if we check the url 
 
