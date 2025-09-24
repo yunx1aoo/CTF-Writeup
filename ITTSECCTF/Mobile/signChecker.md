@@ -51,15 +51,29 @@ after exploring the code i found the key of xor. this function use 0x55 to encry
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c01ba85d-5c31-44b9-abbf-498ce59d883f" />
 
-after get the key. i disas again and search for the data. and i found 2 data in this app. the data like this:
+after get the key. i disas again and search for the data. and i found 2 data in this app. they are a little endian data. the data like this:
 
 data 1
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8488df36-ab39-418c-b132-27b1665070bb" />
+```asm
+   24d0b:       e8 c0 2f 03 00          call   57cd0 <_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne180000ILi0EEEPKc@plt>
+   24d10:       8b 9d 70 ff ff ff       mov    -0x90(%ebp),%ebx
+   24d16:       66 c7 45 f4 32 68       movw   $0x6832,-0xc(%ebp)
+   24d1c:       c7 45 f0 6a 33 39 34    movl   $0x3439336a,-0x10(%ebp)
+   24d23:       89 e0                   mov    %esp,%eax
+   24d25:       8d 4d f0                lea    -0x10(%ebp),%ecx
+```
 
 data 2
 
-<img width="875" height="120" alt="image" src="https://github.com/user-attachments/assets/42011b79-e7ad-41a4-b137-6f8753876888" />
+```asm
+  24d3e:       e8 2d 2f 03 00          call   57c70 <_Z9xorDecodePKhjh@plt>
+   24d43:       83 ec 04                sub    $0x4,%esp
+   24d46:       e9 00 00 00 00          jmp    24d4b <Java_com_example_ittsecmobile2_MainActivity_getAutoUrl@@Base+0x7b>
+   24d4b:       8b 9d 70 ff ff ff       mov    -0x90(%ebp),%ebx
+   24d51:       66 c7 45 ec 3b 68       movw   $0x683b,-0x14(%ebp)
+   24d57:       c7 45 e8 73 26 3c 32    movl   $0x323c2673,-0x18(%ebp)
+```
 
 after get the data. next i want to decrypt the data use key 0x55.
 
