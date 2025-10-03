@@ -64,7 +64,7 @@ Okay, interesting. Honestly, when I got that output, I immediately did some rese
 
 To be honest, I'm not an assembly expert, but I understand a little about how assembly works and how the code blocks work. Here's a brief explanation.
 
-```bash
+```asm
 objdump -d Admin_panel | sed -n '721,770p' | nl -ba
 401a79: 00 00
 401a7b: 48 89 45 f8      mov %rax,-0x8(%rbp)
@@ -96,7 +96,7 @@ Patched
 ---
 
 OK, it's easy, all we have to do is patch this block.
-```
+```asm
     13    401aab:       c7 45 8c 01 00 00 00    movl   $0x1,-0x74(%rbp)
 ```
 
@@ -117,7 +117,7 @@ so we get the offset we need to hit which is 0x1aae
 Before we start, I will backup first, haha. I'm afraid of failure, so we have to backup the file first, because I'm too lazy to download it again.
 
 Use this command:
-```
+```zsh
 cp -n Admin_panel Admin_panel.bak
 ```
 
@@ -126,23 +126,23 @@ we have to patch `01 00 00 00` with `00 00 00 00` which will return zf = 0 and w
 time patching wahahhahahah
 
 try this command:
-```bash
+```zsh
 printf '\x00\x00\x00\x00' | dd of=Admin_panel bs=1 seek=$((0x1aae)) conv=notrunc
 ```
 
 okay lets check our patch is verified or not use this:
-```bash
+```zsh
 hexdump -Cv Admin_panel | grep -n "c7 45 8c 00 00 00 00" 
 ```
 
 if successful it will be like this
-```bash
+```zsh
 hexdump -Cv Admin_panel | grep -n "c7 45 8c 00 00 00 00"
 15204:0003b630  00 00 48 8b 81 28 02 00  00 c7 45 8c 00 00 00 00  |..H..(....E.....|
 ```
 Okay, if you feel confident, hahaha. Let's just try it.
 
-```bash
+```zsh
 ❯ ./Admin_panel
 Are you admin?
 no i'm not admin, now you can trust me
