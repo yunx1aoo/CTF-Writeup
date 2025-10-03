@@ -9,6 +9,6 @@
 | Rich Man's RSA        | Cryptography         | 285   | September 20th, 1:54:00 PM  |
 | phony                 | Reverse Engineering | 456   | September 20th, 2:31:55 PM  |
 | Redacted Remainders   | Cryptography         | 100   | September 20th, 2:56:00 PM  |
-| Logged-in             | Web Exploitation     | 304   | September 20th, 4:49:00 PM  |
+| Logged-in             | Web Exploitation     | 304   | September 20th, 4:49:32 PM  |
 
 ```I dont have much time, luckily I still have time. only 4 hours 😭```
