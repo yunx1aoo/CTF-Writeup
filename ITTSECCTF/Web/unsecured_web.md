@@ -56,8 +56,11 @@ Next I put it into the page parameters section and this is what I got.
 
 I got a base64. which is the flag. then i decode it and i get it
 
-<img width="300" height="185" alt="屏幕截图 2025-09-23 144139" src="https://github.com/user-attachments/assets/50e80090-3eca-4064-85b6-be286716e08f" />
-
+```zsh
+ zsh > echo 'PD9waHAKJGZsYWcgPSAnSVRUU2Vje19jbDRzczFjX0xmaV99JzsK' | base64 -d
+<?php
+$flag = 'ITTSec{_cl4ss1c_Lfi_}';
+```
 
 ## Flag
 
