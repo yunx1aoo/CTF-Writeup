@@ -34,15 +34,85 @@ If we click attack, as usual we are the ones who will always die, somehow this i
 This time the challenge is a bit different, when I checked the source code, it seems that our parameters have been encrypted using the encryption algorithm and there is also HMAC there.
 
 <img width="500" height="500" alt="屏幕截图 2025-09-21 214255" src="https://github.com/user-attachments/assets/12c165dd-4057-45b0-9c48-0fd851243e74" />
-b
-<img width="500" height="500" alt="屏幕截图 2025-09-21 213839" src="https://github.com/user-attachments/assets/e344d556-7ba6-4771-b1b3-272612080e4c" />
+
+this is the submit attack function
+
+```javascript
+async function submitAttack() {
+    let damageValue = 2; // Default damage
+    const params = new URLSearchParams();
+    params.append('damage', damageValue);
+    const plainTextData = params.toString();
+    const encryptedPayload = await encryptData(plainTextData);
+    if (encryptedPayload) {
+        const hmacSignature = await generateHmac(encryptedPayload);
+        if (hmacSignature) {
+            document.getElementById('encrypted_data').value = encryptedPayload;
+            document.getElementById('hmac_data').value = hmacSignature;
+            document.getElementById('attack-form').submit();
+        } else {
+            alert("Gagal menghasilkan HMAC. Serangan dibatalkan.");
+        }
+    } else {
+        alert("Gagal mengenkripsi data. Serangan dibatalkan.");
+    }
+}
+if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+}
+```
 
 because I saw that there were 2 interesting types of functions encryptedata(), and generatehmac() so I called them using the console
 
-<img width="500" height="500" alt="屏幕截图 2025-09-21 214322" src="https://github.com/user-attachments/assets/9b7ba738-56cb-4ef5-a4eb-263a123ed8ab" />
-<br>
-<img width="500" height="500" alt="屏幕截图 2025-09-21 214326" src="https://github.com/user-attachments/assets/1c80e597-2171-46c4-8cb7-0322c8e89c6e" />
+```javascript
+>>> console.log(encryptData.toString())
+async function encryptData(data) {
+    deb
+    try {
+        const encoder = new TextEncoder();
+        const keyData = encoder.encode(AES_KEY);
+        const ivData = encoder.encode(AES_IV);
+        const cryptokey = await window.crypto.subtle.importKey(
+            'raw',
+            keyData, { name: 'AES-CBC', length: 128 }, false, ['encrypt']
+        );
+        const encryptedBuffer = await window.crypto.subtle.encrypt(
+            { name: 'AES-CBC', iv: ivData },
+            cryptokey, encoder.encode(data)
+        );
+        return btoa(String.fromCharCode.apply(null, new Uint8Array(encryptedBuffer)));
+    } catch (error) {
+        console.error("Encryption error:", error); return null;
+    }
+}
+```
 
+```javascript
+>>> console.log(generateHmac.toString())
+async function generateHmac(data) {
+    try {
+        const encoder = new TextEncoder();
+        const keyData = encoder.encode(AES_KEY);
+        const cryptokey = await window.crypto.subtle.importKey(
+            'raw',
+            keyData,
+            { name: 'HMAC', hash: 'SHA-256' },
+            false,
+            ['sign']
+        );
+        const signatureBuffer = await window.crypto.subtle.sign(
+            'HMAC',
+            cryptokey,
+            encoder.encode(data)
+        );
+        return Array.from(new Uint8Array(signatureBuffer)).map(b =>
+            b.toString(16).padStart(2, '0')).join('');
+    } catch (error) {
+        console.error("HMAC generation error:", error);
+        return null;
+    }
+}
+```
 It was really unexpected that he would use the AES key algorithm there. After that, I tried brute force and searched for the AES key. And I found it.
 
 <img width="675" height="93" alt="屏幕截图 2025-09-21 214416" src="https://github.com/user-attachments/assets/ed8becb0-a0b8-446b-a867-b6e45c7a4008" />
