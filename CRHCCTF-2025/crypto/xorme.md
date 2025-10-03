@@ -26,7 +26,7 @@ There must be a question, how do we know the plaintext? In the hint, we are clea
 because it is hexdecimal, we will take the first 2 digits for testing, we can name it key1
 
 like this example:
-```bash
+```python
 >>> key1 = 0x3b ^ ord('C')
 >>> print(key1)
 120
