@@ -22,7 +22,7 @@
 
 ## Solution
 
-I don't know if this is the way the committee wants to solve it. Because I think it's a bit unreasonable for me to get a flag just like this.
+I don't know if this is the way the committee wants to solve it. Because I think it's a bit unreasonable for me to get a flag just like this🗿 .
 
 ```bash
 strings itsec.apk | grep -a ITT
