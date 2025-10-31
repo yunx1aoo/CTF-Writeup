@@ -10,11 +10,14 @@ https://www.instagram.com/p/DQductLk_nF/
 
 Writeup ini dibuat dengan buru buru. jika terdapat kesalahan dalam penulisan kata. mff yah
 
-<img width="1186" height="380" alt="image" src="https://github.com/user-attachments/assets/cb31e599-b742-4954-b6fd-d669e99c15ab" />
+<img width="1345" height="410" alt="image" src="https://github.com/user-attachments/assets/23f6b9c2-a371-456e-9db4-df457b92872e" />
 
-<img width="1049" height="349" alt="image" src="https://github.com/user-attachments/assets/a30cd0d3-a2b0-4a80-8163-d3b72b1f44da" />
+<img width="1348" height="325" alt="image" src="https://github.com/user-attachments/assets/8a57f8ae-d9f4-4aa7-ace6-0f9c90488b50" />
+
+<img width="1326" height="768" alt="image" src="https://github.com/user-attachments/assets/2d0dadae-27ef-4427-ad0d-3e8a06e1f0b3" />
 
 Solved Chall (33/37)
+
 ## Web
 - Employee Portal – 992 pts
 - Forbidden Gallery – 872 pts
