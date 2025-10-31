@@ -1,8 +1,11 @@
 https://www.instagram.com/p/DQductLk_nF/
 
 🏆 Congratulations to all the winners:
+
 🥇 1st Place — Vincent Aurigo Osnard
+
 🥈 2nd Place — Muhamad Rizqi Wiransyah
+
 🥉 3rd Place — Yulius Wijaya
 
 Writeup ini dibuat dengan buru buru. jika terdapat kesalahan dalam penulisan kata. mff yah
