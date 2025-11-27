@@ -1,64 +1,93 @@
-https://www.instagram.com/p/DQductLk_nF/
+# 🚩 CTF Event Writeups
+> **Achievement:** Solved 33/37 Challenges 🚀
 
-🏆 Congratulations to all the winners:
+*Catatan: Writeup ini dibuat dengan buru-buru, mohon dimaklumi jika ada kekurangan.* 🙏
 
-🥇 1st Place — Vincent Aurigo Osnard
+---
 
-🥈 2nd Place — Muhamad Rizqi Wiransyah
+## 🏆 Hall of Fame
+> 🔗 **Official Announcement:** [Lihat Postingan Instagram](https://www.instagram.com/p/DQductLk_nF/)
 
-🥉 3rd Place — Yulius Wijaya
+| Rank | Player |
+| :---: | :--- |
+| 🥇 | **Vincent Aurigo Osnard** |
+| 🥈 | **Muhamad Rizqi Wiransyah** |
+| 🥉 | **Yulius Wijaya** |
 
-Writeup ini dibuat dengan buru buru. jika terdapat kesalahan dalam penulisan kata. mff yah
+---
 
-<img width="1345" height="410" alt="image" src="https://github.com/user-attachments/assets/23f6b9c2-a371-456e-9db4-df457b92872e" />
+## 📊 Statistics
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/23f6b9c2-a371-456e-9db4-df457b92872e" width="100%" alt="Scoreboard Graph" />
+</div>
+<br/>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8a57f8ae-d9f4-4aa7-ace6-0f9c90488b50" width="48%" alt="Category Stats" />
+  <img src="https://github.com/user-attachments/assets/2d0dadae-27ef-4427-ad0d-3e8a06e1f0b3" width="48%" alt="Solved List" />
+</div>
 
-<img width="1348" height="325" alt="image" src="https://github.com/user-attachments/assets/8a57f8ae-d9f4-4aa7-ace6-0f9c90488b50" />
+---
 
-<img width="1326" height="768" alt="image" src="https://github.com/user-attachments/assets/2d0dadae-27ef-4427-ad0d-3e8a06e1f0b3" />
+## 📂 Solved Challenges
 
-Solved Chall (33/37)
+### 🌐 Web Exploitation
+| Challenge Name | Points |
+| :--- | :---: |
+| Employee Portal | 992 |
+| Manga Mart | 944 |
+| Forbidden Gallery | 872 |
+| Yamlizer | 826 |
+| Swagger Item | 712 |
 
-## Web
-- Employee Portal – 992 pts
-- Forbidden Gallery – 872 pts
-- Manga Mart – 944 pts
-- Swagger Item – 712 pts
-- Yamlizer – 826 pts
+### 🔍 Forensics
+| Challenge Name | Points |
+| :--- | :---: |
+| gotta catche em all | 997 |
+| facenook | 997 |
+| memories | 986 |
+| Berlapis | 957 |
+| Cursor | 893 |
 
-## Forensic
-- memories – 986 pts
-- gotta catche em all – 997 pts
-- Berlapis – 957 pts
-- Cursor – 893 pts
-- facenook – 997 pts
+### ⚔️ PWN / Binary Exploitation
+| Challenge Name | Points |
+| :--- | :---: |
+| Kitsune Cafe | 912 |
+| Bard of Format RPG | 912 |
+| Parameter Vault | 872 |
+| Magic Potion | 872 |
+| ret2win | 645 |
 
-## PWN
-- Kitsune Cafe – 912 pts
-- Bard of Format RPG – 912 pts
-- Parameter Vault – 872 pts
-- Magic Potion – 872 pts
-- ret2win – 645 pts
+### 🔄 Reverse Engineering
+| Challenge Name | Points |
+| :--- | :---: |
+| Luwak | 968 |
+| Aspek | 850 |
+| ROPAS | 800 |
+| Rick Roll | 712 |
 
-## Misc
-- Command Jail – 773 pts
-- Fate Granblue Order – 986 pts
-- Bot – 893 pts
-- Captcha Warrior – 445 pts
-- Welcome – 100 pts
+### 🔐 Cryptography
+| Challenge Name | Points |
+| :--- | :---: |
+| Gate Isekai | 712 |
+| Shrine Oracle | 680 |
+| Little ~Pony~ | 570 |
+| Suki | 488 |
+| Okaimono Market | 400 |
 
-## Reverse
-- Luwak – 968 pts
-- Aspek – 850 pts
-- ROPAS – 800 pts
-- Rick Roll – 712 pts
+### 🕵️ OSINT
+| Challenge Name | Points |
+| :--- | :---: |
+| Ladang | 957 |
+| Jembatan | 200 |
 
-## Crypto
-- Shrine Oracle – 680 pts
-- Little ~Pony~ – 570 pts
-- Okaimono Market – 400 pts
-- Gate Isekai – 712 pts
-- Suki – 488 pts
+### 🎲 Misc
+| Challenge Name | Points |
+| :--- | :---: |
+| Fate Granblue Order | 986 |
+| Bot | 893 |
+| Command Jail | 773 |
+| Captcha Warrior | 445 |
+| Welcome | 100 |
 
-## OSINT
-- Ladang – 957 pts
-- Jembatan – 200 pts
+---
+<p align="center">Made with ❤️ for CTF Community</p>
