@@ -29,67 +29,68 @@
 ---
 
 ## 📂 Solved Challenges
+> **Legend:** 🩸 = *First Blood*
 
 ### 🌐 Web Exploitation
-| Challenge Name | Points |
-| :--- | :---: |
-| Employee Portal | 992 |
-| Manga Mart | 944 |
-| Forbidden Gallery | 872 |
-| Yamlizer | 826 |
-| Swagger Item | 712 |
+| Challenge Name | Points | Tag |
+| :--- | :---: | :---: |
+| Employee Portal | 992 | |
+| Manga Mart | 944 | |
+| Forbidden Gallery | 872 | |
+| Yamlizer | 826 | |
+| Swagger Item | 712 | |
 
 ### 🔍 Forensics
-| Challenge Name | Points |
-| :--- | :---: |
-| gotta catche em all | 997 |
-| facenook | 997 |
-| memories | 986 |
-| Berlapis | 957 |
-| Cursor | 893 |
+| Challenge Name | Points | Tag |
+| :--- | :---: | :---: |
+| gotta catche em all | 997 | |
+| facenook | 997 | |
+| memories | 986 | |
+| Berlapis | 957 | |
+| Cursor | 893 | |
 
 ### ⚔️ PWN / Binary Exploitation
-| Challenge Name | Points |
-| :--- | :---: |
-| Kitsune Cafe  | 912 |
-| Bard of Format RPG | 912 |
-| Parameter Vault | 872 |
-| Magic Potion 🩸 | 872 |
-| ret2win 🩸 | 645 |
+| Challenge Name | Points | Tag |
+| :--- | :---: | :---: |
+| Kitsune Cafe  | 912 | |
+| Bard of Format RPG | 912 | |
+| Parameter Vault | 872 | |
+| Magic Potion | 872 | 🩸 |
+| ret2win | 645 | 🩸 |
 
 ### 🔄 Reverse Engineering
-| Challenge Name | Points |
-| :--- | :---: |
-| Luwak | 968 |
-| Aspek | 850 |
-| ROPAS | 800 |
-| Rick Roll 🩸 | 712 |
+| Challenge Name | Points | Tag |
+| :--- | :---: | :---: |
+| Luwak | 968 | |
+| Aspek | 850 | |
+| ROPAS | 800 | |
+| Rick Roll | 712 | 🩸 |
 
 ### 🔐 Cryptography
-| Challenge Name | Points |
-| :--- | :---: |
-| Gate Isekai | 712 |
-| Shrine Oracle | 680 |
-| Little ~Pony~ 🩸 | 570 |
-| Suki | 488 |
-| Okaimono Market | 400 |
+| Challenge Name | Points | Tag |
+| :--- | :---: | :---: |
+| Gate Isekai | 712 | |
+| Shrine Oracle | 680 | |
+| Little ~Pony~ | 570 | 🩸 |
+| Suki | 488 | |
+| Okaimono Market | 400 | |
 
 ### 🕵️ OSINT
-| Challenge Name | Points |
-| :--- | :---: |
-| L4mpun9 | 968 |
-| Ladang | 957 |
-| DNS Hunt | 928 | 
-| Jembatan | 200 |
+| Challenge Name | Points | Tag |
+| :--- | :---: | :---: |
+| L4mpun9 | 968 | |
+| Ladang | 957 | |
+| DNS Hunt | 928 |  |
+| Jembatan | 200 | |
 
 ### 🎲 Misc
-| Challenge Name | Points |
-| :--- | :---: |
-| Fate Granblue Order 🩸 | 986 |
-| Bot | 893 |
-| Command Jail | 773 |
-| Captcha Warrior 🩸 | 445 |
-| Welcome | 100 🩸 |
+| Challenge Name | Points | Tag |
+| :--- | :---: | :---: |
+| Fate Granblue Order | 986 | 🩸 |
+| Bot | 893 | |
+| Command Jail | 773 | |
+| Captcha Warrior | 445 | 🩸 |
+| Welcome | 100 | 🩸 |
 
 ---
 <p align="center">Made with ❤️ for CTF Community</p>
