@@ -29,7 +29,6 @@
 ---
 
 ## 📂 Solved Challenges
-> **Legend:** 🩸 = *First Blood*
 
 ### 🌐 Web Exploitation
 | Challenge Name | Points | Tag |
@@ -49,7 +48,7 @@
 | Berlapis | 957 | |
 | Cursor | 893 | |
 
-### ⚔️ PWN / Binary Exploitation
+### 🐞 PWN / Binary Exploitation
 | Challenge Name | Points | Tag |
 | :--- | :---: | :---: |
 | Kitsune Cafe  | 912 | |
