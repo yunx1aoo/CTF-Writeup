@@ -77,7 +77,9 @@
 ### 🕵️ OSINT
 | Challenge Name | Points |
 | :--- | :---: |
+| L4mpun9 | 968 |
 | Ladang | 957 |
+| DNS Hunt | 928 | 
 | Jembatan | 200 |
 
 ### 🎲 Misc
