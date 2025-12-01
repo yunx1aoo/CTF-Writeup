@@ -51,11 +51,11 @@
 ### ⚔️ PWN / Binary Exploitation
 | Challenge Name | Points |
 | :--- | :---: |
-| Kitsune Cafe | 912 |
+| Kitsune Cafe  | 912 |
 | Bard of Format RPG | 912 |
 | Parameter Vault | 872 |
-| Magic Potion | 872 |
-| ret2win | 645 |
+| Magic Potion 🩸 | 872 |
+| ret2win 🩸 | 645 |
 
 ### 🔄 Reverse Engineering
 | Challenge Name | Points |
@@ -63,14 +63,14 @@
 | Luwak | 968 |
 | Aspek | 850 |
 | ROPAS | 800 |
-| Rick Roll | 712 |
+| Rick Roll 🩸 | 712 |
 
 ### 🔐 Cryptography
 | Challenge Name | Points |
 | :--- | :---: |
 | Gate Isekai | 712 |
 | Shrine Oracle | 680 |
-| Little ~Pony~ | 570 |
+| Little ~Pony~ 🩸 | 570 |
 | Suki | 488 |
 | Okaimono Market | 400 |
 
@@ -85,11 +85,11 @@
 ### 🎲 Misc
 | Challenge Name | Points |
 | :--- | :---: |
-| Fate Granblue Order | 986 |
+| Fate Granblue Order 🩸 | 986 |
 | Bot | 893 |
 | Command Jail | 773 |
-| Captcha Warrior | 445 |
-| Welcome | 100 |
+| Captcha Warrior 🩸 | 445 |
+| Welcome | 100 🩸 |
 
 ---
 <p align="center">Made with ❤️ for CTF Community</p>
