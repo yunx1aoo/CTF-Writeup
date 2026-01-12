@@ -12,7 +12,7 @@
 
 ## Challenges Index
 
-| Category | Challenge Name | Points | Timestamp (Jan 10th) | Author |
+| Category | Challenge Name | Points | Timestamp (Jan 10th) | Solved by |
 | :--- | :--- | :--- | :--- | :--- |
 | **Reverse** | Sega Saturn | 230 | 3:29:28 PM | yunx1ao |
 | **Web** | NeonGate | 25 | 3:09:59 PM | yunx1ao |
