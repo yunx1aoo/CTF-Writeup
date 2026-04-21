@@ -1,3 +1,2 @@
-# CTF-Writeup
 # CTF-Journey
 
