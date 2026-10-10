@@ -1,6 +1,6 @@
 # Cyber Jawara (Student Category) 2025-2026 Writeup
 
-> **Rank:** 2 from ±92 Team · **Status:** Finalist · **Date:** 20 September 2025 / 18 April 2026
+> **Rank:** 2 from ±92 Team · **Status:** 1st Runner · **Date:** 20 September 2025 / 18 April 2026
 
 ## Summary
 
