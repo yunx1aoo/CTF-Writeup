@@ -19,7 +19,7 @@ finallyy, gg......
 | Babak | File | Keterangan |
 |---|---|---|
 | Quals | [📄 Quals.pdf](./Quals/PELAJAR_kata%20rizqi%20lengah%20dikit%20mau%20di%20ddos%20platformnya,%20hati%20hati%20ya%20panitia_Writeup%20%282%29.pdf) | 6/12 solved |
-| Final | [📄 Quals.pdf](./Quals//CJ2025-pelajar-KATA%20RIZQI%20LENGAH%20DI%20ya%20gitu%20la%20kira%20kira.pdf) | 5/9 solved |
+| Final | [📄 Final.pdf](./Quals//CJ2025-pelajar-KATA%20RIZQI%20LENGAH%20DI%20ya%20gitu%20la%20kira%20kira.pdf) | 5/9 solved |
 
 ## Challenges
 
