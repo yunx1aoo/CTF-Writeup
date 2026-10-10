@@ -1,22 +1,67 @@
-# 🚩 CTF Event Writeups
-> **Achievement:** Solved 33/37 Challenges 🚀
+# CTF Event Writeup
 
-*Catatan: Writeup ini dibuat dengan buru-buru, mohon dimaklumi jika ada kekurangan.* 🙏
+> **Rank:** 1st · **Status:** Champion · **Date:** 25 October 2025
 
----
+## Summary
 
-## 🏆 Hall of Fame
-> 🔗 **Official Announcement:** [Lihat Postingan Instagram](https://www.instagram.com/p/DQductLk_nF/)
+| | |
+|---|---|
+| **Username** | yunx1ao |
+| **Rank** | 1/±70 |
+| **Total Score** | 25.819 pts |
+| **Solved** | 33/37 challenge |
+| **Format** | Jeopardy, Online |
 
-| Rank | Player |
-| :---: | :--- |
-| 🥇 | **Vincent Aurigo Osnard** |
-| 🥈 | **Muhamad Rizqi Wiransyah** |
-| 🥉 | **Yulius Wijaya** |
+## Writeup
 
----
+| Babak | File | Keterangan |
+|---|---|---|
+| Main Event | [📄 Writeup](./%5BWriteups%5D%20LappungCTF%20Vol%202.0%20-%20vincent_aka_yunx1ao.pdf) | 33/37 solved |
 
-## 📊 Statistics
+## Challenges
+
+| Category | Challenge | Score | Time | Solver |
+|---|---|---|---|---|
+| Web Exploitation | Employee Portal | 992 | - | yunx1ao |
+| Web Exploitation | Manga Mart | 944 | - | yunx1ao |
+| Web Exploitation | Forbidden Gallery | 872 | - | yunx1ao |
+| Web Exploitation | Yamlizer | 826 | - | yunx1ao |
+| Web Exploitation | Swagger Item | 712 | - | yunx1ao |
+| Forensics | gotta catche em all | 997 | - | yunx1ao |
+| Forensics | facenook | 997 | - | yunx1ao |
+| Forensics | memories | 986 | - | yunx1ao |
+| Forensics | Berlapis | 957 | - | yunx1ao |
+| Forensics | Cursor | 893 | - | yunx1ao |
+| PWN / Binary Exploitation | Kitsune Cafe | 912 | - | yunx1ao |
+| PWN / Binary Exploitation | Bard of Format RPG | 912 | - | yunx1ao |
+| PWN / Binary Exploitation | Parameter Vault | 872 | - | yunx1ao |
+| PWN / Binary Exploitation | Magic Potion 🩸 | 872 | - | yunx1ao |
+| PWN / Binary Exploitation | ret2win 🩸 | 645 | - | yunx1ao |
+| Reverse Engineering | Luwak | 968 | - | yunx1ao |
+| Reverse Engineering | Aspek | 850 | - | yunx1ao |
+| Reverse Engineering | ROPAS | 800 | - | yunx1ao |
+| Reverse Engineering | Rick Roll 🩸 | 712 | - | yunx1ao |
+| Cryptography | Gate Isekai | 712 | - | yunx1ao |
+| Cryptography | Shrine Oracle | 680 | - | yunx1ao |
+| Cryptography | Little ~Pony~ 🩸 | 570 | - | yunx1ao |
+| Cryptography | Suki | 488 | - | yunx1ao |
+| Cryptography | Okaimono Market | 400 | - | yunx1ao |
+| OSINT | L4mpun9 | 968 | - | yunx1ao |
+| OSINT | Ladang | 957 | - | yunx1ao |
+| OSINT | DNS Hunt | 928 | - | yunx1ao |
+| OSINT | Jembatan | 200 | - | yunx1ao |
+| Misc | Fate Granblue Order 🩸 | 986 | - | yunx1ao |
+| Misc | Bot | 893 | - | yunx1ao |
+| Misc | Command Jail | 773 | - | yunx1ao |
+| Misc | Captcha Warrior 🩸 | 445 | - | yunx1ao |
+| Misc | Welcome 🩸 | 100 | - | yunx1ao |
+
+## Notes
+
+- gg
+
+## Documentation
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/23f6b9c2-a371-456e-9db4-df457b92872e" width="100%" alt="Scoreboard Graph" />
 </div>
@@ -25,71 +70,3 @@
   <img src="https://github.com/user-attachments/assets/8a57f8ae-d9f4-4aa7-ace6-0f9c90488b50" width="48%" alt="Category Stats" />
   <img src="https://github.com/user-attachments/assets/2d0dadae-27ef-4427-ad0d-3e8a06e1f0b3" width="48%" alt="Solved List" />
 </div>
-
----
-
-## 📂 Solved Challenges
-
-### 🌐 Web Exploitation
-| Challenge Name | Points | Tag |
-| :--- | :---: | :---: |
-| Employee Portal | 992 | |
-| Manga Mart | 944 | |
-| Forbidden Gallery | 872 | |
-| Yamlizer | 826 | |
-| Swagger Item | 712 | |
-
-### 🔍 Forensics
-| Challenge Name | Points | Tag |
-| :--- | :---: | :---: |
-| gotta catche em all | 997 | |
-| facenook | 997 | |
-| memories | 986 | |
-| Berlapis | 957 | |
-| Cursor | 893 | |
-
-### 🐞 PWN / Binary Exploitation
-| Challenge Name | Points | Tag |
-| :--- | :---: | :---: |
-| Kitsune Cafe  | 912 | |
-| Bard of Format RPG | 912 | |
-| Parameter Vault | 872 | |
-| Magic Potion | 872 | 🩸 |
-| ret2win | 645 | 🩸 |
-
-### 🔄 Reverse Engineering
-| Challenge Name | Points | Tag |
-| :--- | :---: | :---: |
-| Luwak | 968 | |
-| Aspek | 850 | |
-| ROPAS | 800 | |
-| Rick Roll | 712 | 🩸 |
-
-### 🔐 Cryptography
-| Challenge Name | Points | Tag |
-| :--- | :---: | :---: |
-| Gate Isekai | 712 | |
-| Shrine Oracle | 680 | |
-| Little ~Pony~ | 570 | 🩸 |
-| Suki | 488 | |
-| Okaimono Market | 400 | |
-
-### 🕵️ OSINT
-| Challenge Name | Points | Tag |
-| :--- | :---: | :---: |
-| L4mpun9 | 968 | |
-| Ladang | 957 | |
-| DNS Hunt | 928 |  |
-| Jembatan | 200 | |
-
-### 🎲 Misc
-| Challenge Name | Points | Tag |
-| :--- | :---: | :---: |
-| Fate Granblue Order | 986 | 🩸 |
-| Bot | 893 | |
-| Command Jail | 773 | |
-| Captcha Warrior | 445 | 🩸 |
-| Welcome | 100 | 🩸 |
-
----
-<p align="center">Made with ❤️ for CTF Community</p>
